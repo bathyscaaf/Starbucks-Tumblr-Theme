@@ -626,20 +626,6 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
     {/block:SearchPage}
       
     {block:Posts}
-      {block:Text}
-      <div class="text">
-        {block:Title}<h2>{Title}</h2>{/block:Title}
-        {Body}
-      {/block:Text}
-
-      
-      {block:Quote}
-      <div class="quote">
-        <blockquote class="words">&#8220;{Quote}&#8221;</blockquote>
-        {block:Source}<div class="source">{Source}</div>{/block:Source}
-      {/block:Quote}
-
-
       {block:Link}
       <div class="link">
         <h2><a href="{URL}" {Target}>{Name}</a></h2>
@@ -650,6 +636,26 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
         {/block:Description}
       {/block:Link}
 
+      {block:Text}
+      <div class="text">
+        {block:Title}<h1>{Title}</h1>{/block:Title}
+
+      <ul class="post-info">
+          {block:RebloggedFrom}<li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>{/block:RebloggedFrom}
+          {block:HasTags}<li class="tags">{lang:Tags}: <ul>{block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul></li>{/block:HasTags}
+          {block:Date}<li class="date"><h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}</li>
+          {block:Date}
+          {block:IfNotDisqusShortname}<li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>{/block:IfNotDisqusShortname}
+		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a></li>{block:IfDisqusShortname}
+          {/block:Date}
+        </ul>
+      <div class="post-body">
+        {Body}
+      </div>
+      {/block:Text}
+
+      
+     
       
       {block:Video}
       <div class="video">
@@ -693,15 +699,7 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
         </ul>
       {/block:Chat}
       
-        <ul class="post-footer">
-          {block:RebloggedFrom}<li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>{/block:RebloggedFrom}
-          {block:HasTags}<li class="tags">{lang:Tags}: <ul>{block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul></li>{/block:HasTags}
-          {block:Date}<li class="date"><h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}</li>
-          {block:Date}
-          {block:IfNotDisqusShortname}<li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>{/block:IfNotDisqusShortname}
-		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a></li>{block:IfDisqusShortname}
-          {/block:Date}
-        </ul>
+       
       </div> <!-- end single post -->
       {/block:Posts}
 

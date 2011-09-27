@@ -1,6 +1,6 @@
 body { background: url(http://bathyscaaf.com/tumblr/tumblrBG.jpg) top left no-repeat}
 #header {
-height: 4.7em;
+height: 5em;
 }
 
 
@@ -33,21 +33,24 @@ overflow: hidden;
 
 .hasJS #utilities {
 position: absolute;
-top: -4px;
-right: 52px;
+top: -5px;
+right: 8px;
+min-width: 700px;
 padding: 0;
 background: none;
 }
 
 #utility_links {
 padding: 13px 0 0 0;
-font-size: 1.1em;
+font-size: 1em;
 line-height: 1.091;
 }
 .hasJS #utility_links {
 position: relative;
 z-index: 500;
 float: left;
+left: 4px;
+
 font-size: 0.850em;
 }
 .hasJS #utility_links ul {
@@ -89,7 +92,7 @@ font-weight:bold;
 #utility_links li {
 position: relative;
 float: left;
-margin: 0 25px 0 0;
+margin: 0 21px 0 0;
 list-style:none;
 }
 #international .current {
@@ -119,13 +122,32 @@ background-position: -64px -187px;
 	min-width:500px;
 }
 
-#container h2 {
+#container h1 {
 	font-size:2.143em;
 	line-height:1.167;
 	margin-left:2px;
 	letter-spacing:.15px;
 }
 
+.post-info {
+
+	margin:0;
+	padding:0;
+	
+}
+
+.post-info li {
+	display:inline;
+	float:left;
+	margin:0 0 0 5px}
+
+.post-body {
+	clear:both;
+}
+
+.date h3 {
+	font-size:100%;
+}	
 
 /* //// Buttons ----------------------------------------- //// */
 
@@ -471,7 +493,4 @@ text-decoration:none;
 	background:none}
 #nav .menu_suggestion .suggestion_links a {
 	font-weight:bold}
-
-
   </style>
-
