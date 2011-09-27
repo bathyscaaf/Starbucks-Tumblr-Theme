@@ -1,0 +1,477 @@
+body { background: url(http://bathyscaaf.com/tumblr/tumblrBG.jpg) top left no-repeat}
+#header {
+height: 4.7em;
+}
+
+
+ul#skip {
+position: absolute;
+top: 0;
+left: -1000px;
+width: 100%;
+}
+ul#skip li {
+position: absolute;
+z-index: 1;
+margin: 0 0 0 111px;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+#header a#logo {
+position: absolute;
+top: 15px;
+left: 0;
+padding: 8px 20px 0 0;
+width: 85px;
+height: 84px;
+background: url(http://www.starbucks.com/static/images/global/logo.png) no-repeat 50% 50%;
+text-indent: -9999px;
+overflow: hidden;
+}
+
+
+.hasJS #utilities {
+position: absolute;
+top: -4px;
+right: 52px;
+padding: 0;
+background: none;
+}
+
+#utility_links {
+padding: 13px 0 0 0;
+font-size: 1.1em;
+line-height: 1.091;
+}
+.hasJS #utility_links {
+position: relative;
+z-index: 500;
+float: left;
+font-size: 0.850em;
+}
+.hasJS #utility_links ul {
+float: left;
+}
+#utility_links a, .utility_bold {
+font-weight: bold;
+}
+#starbucks_search fieldset {
+display: inline;
+border:none;
+}
+.hasJS #starbucks_search {
+float: left;
+clear: none;
+padding: 0;
+}
+button, input, select, textarea {
+margin: 0;
+padding: 4px 6px;
+border: 2px solid #EDEEEE;
+background: #EDEEEE;
+color: black;
+font: 1em Corbel,'Trebuchet MS','Helvetica Neue',Helvetica,Arial,sans-serif;
+vertical-align: bottom;
+}
+#starbucks_search input.search_input {
+float: left;
+width: 15em;
+}
+#starbucks_search input:focus, select:focus, textarea:focus {
+border-color: #71B43A;
+outline: none;
+}
+#utility_links a{
+text-decoration:none;
+font-weight:bold;
+}
+#utility_links li {
+position: relative;
+float: left;
+margin: 0 25px 0 0;
+list-style:none;
+}
+#international .current {
+position: relative;
+padding: 2px 2px 2px 25px;
+margin: 2px 0 2px 0;
+}
+.flag {
+position: absolute;
+top: 3px;
+left: 3px;
+width: 16px;
+height: 11px;
+background: url(http://www.starbucks.com/static/images/flagssprite_small.png) no-repeat 0 0;
+text-indent: 9999px;
+overflow: hidden;
+}
+.flag.en, .flag.en-us, .flag.us {
+background-position: -64px -187px;
+}
+
+/* ---- POSTS ---- */
+#container {
+	float:left;
+	margin-left:20px;
+	width:42em;
+	min-width:500px;
+}
+
+#container h2 {
+	font-size:2.143em;
+	line-height:1.167;
+	margin-left:2px;
+	letter-spacing:.15px;
+}
+
+
+/* //// Buttons ----------------------------------------- //// */
+
+/* default ----------------------------------------- */
+span.button a,
+span.button a:visited,
+span.button button,
+span.button input,
+span.button span {
+	margin:0 10px 0 0;
+	padding:.2857em 1.2857em; /* 4px 18px */
+	border:1px solid #2a8a15;
+	background-image:-moz-linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(30%, #5CA61F), color-stop(100%, #1F760C));
+	background-image:-webkit-linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background-image:linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background-color:#5CA61F;
+	color:#fff;
+	font-weight:bold;
+	line-height:1; /* 14px */
+	text-align:center;
+	cursor:pointer}
+span.button a:hover,
+span.button a:focus,
+span.button button:hover,
+span.button button:focus,
+span.button input:hover,
+span.button input:focus {
+	background-image:-moz-linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F760C), color-stop(70%, #5CA61F));
+	background-image:-webkit-linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background-image:linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background-color:#1f760c}
+span.button a:active,
+span.button button:active,
+span.button input:active {
+	background:#1f760c;
+	outline:0}
+
+span.button button::-moz-focus-inner,
+span.button input::-moz-focus-inner {
+	border:0}
+
+/* variations ----------------------------------------- */
+
+/* ---- disabled ---- */
+/*
+span.disabled,
+span.disabled *,
+span.disabled:hover *,
+span.disabled:hover {
+	border:0;
+	background:transparent;
+	color:#686868}
+span.disabled *,
+span.disabled:hover * {
+	border:1px solid #dadada;
+	cursor:default}
+*/
+
+span.button span {
+	border-color:#ebedec;
+	background:#ebedec;
+	color:#000;
+	cursor:default}
+
+/* ---- loading ---- */
+span.button_loading {
+	position:relative;
+	top:1px;
+	margin-right:13px;
+	padding:.2857em 1.14286em;  /* 4px 16px */
+	border:1px solid #2a8a15;
+	background:#fff url(http://www.starbucks.com/static/images/ajax-button-loader.gif) no-repeat 50% 50%}
+span.button_loading a,
+span.button_loading a:visited,
+span.button_loading button,
+span.button_loading input {
+	visibility:hidden;
+	margin:0;
+	padding:0 0 0 1px;
+	border:0}
+
+/* ---- reset ---- */
+span.button_reset a,
+span.button_reset a:visited,
+span.button_reset button,
+span.button_reset input,
+span.button_reset span {
+	border-color:rgb(255,255,255);
+	border-color:rgba(255,255,255,0);
+	background:none;
+	color:#5ca61f}
+span.button_reset a:hover,
+span.button_reset a:focus,
+span.button_reset button:hover,
+span.button_reset button:focus,
+span.button_reset input:hover,
+span.button_reset input:focus {
+	background:transparent;
+	color:#2A8A15}
+span.button_reset a:active,
+span.button_reset button:active,
+span.button_reset input:active {
+	background:none}
+
+/* ---- search ---- */
+span.button_search a,
+span.button_search a:visited,
+span.button_search button,
+span.button_search input {
+	padding:5px 6px;
+	width:27px;
+	height:29px;
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%;
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-moz-linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-webkit-gradient(linear, left top, left bottom, color-stop(30%, #5CA61F), color-stop(100%, #1F760C));
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-webkit-linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		linear-gradient(top, #5CA61F 30%, #1F760C 100%);
+	background-color:#5CA61F;
+	text-indent:-9999px;
+	overflow:hidden}
+span.button_search a:hover,
+span.button_search a:focus,
+span.button_search button:hover,
+span.button_search button:focus,
+span.button_search input:hover,
+span.button_search input:focus {
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%;
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-moz-linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F760C), color-stop(70%, #5CA61F));
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		-webkit-linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background:
+		url(http://www.starbucks.com/static/images/global/search.png) no-repeat 50% 50%,
+		linear-gradient(top, #1F760C 0, #5CA61F 70%);
+	background-color:#1f760c}
+
+
+
+
+
+/* //// Navigation ----------------------------------------- //// */
+#nav {
+	position:absolute;
+	z-index:400;
+	top:3.5em;
+	left:69px;
+	clear:both}
+#nav h3 {
+	display:none}
+#nav ul {
+	margin:0;
+	width:945px}
+#nav li {
+	display:inline;
+	float:left;
+	margin:0 0 0 5px}
+
+/* tab ----------------------------------------------- */
+#nav .tab {
+	display:block;
+	position:relative;
+	padding:2px 13px 0;
+	color:#000}
+#nav .tab strong {
+	position:relative;
+	font-weight:normal;
+	font-size:1.2857em; /* 18px */
+	letter-spacing:.9px;
+	text-decoration:none;
+	text-transform:uppercase}
+#nav .tab span {
+	position:relative;
+	top:-10px;
+	color:#53534a;
+	font-size:.7857em; /* 11px */
+	text-transform:none;
+	white-space:nowrap}
+
+/* ---- hover, focus ---- */
+#nav .tab:hover,
+#nav .tab:focus {
+	background:#fff;
+	color:#2A8A15}
+#nav .tab:hover span,
+#nav .tab:focus span {
+	color:#000}
+
+/* ---- background div ---- */
+#nav .tab div {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background:#1e1e1e}
+
+/* ---- open ---- */
+#nav .open .tab,
+#nav .open .tab:hover,
+#nav .open .tab:focus {
+	background:#1e1e1e;
+	color:#71b43a}
+#nav .open .tab span,
+#nav .open .tab:hover span,
+#nav .open .tab:focus span {
+	color:#fff}
+
+/* ---- current section ---- */
+.section_coffee #nav_coffee .tab strong,
+.section_menu #nav_menu .tab strong,
+.section_coffeehouse #nav_coffeehouse .tab strong,
+.section_responsibility #nav_responsibility .tab strong,
+.section_card #nav_card .tab strong,
+.section_shop #nav_shop .tab strong {
+	font-weight:bold;
+	color:#71b43a}
+#nav li a{
+text-decoration:none;
+}
+/*
+#nav li a:hover,
+#nav li a:focus,
+#nav li:hover a {
+*/
+	/* ie8.css */
+/*
+	position:relative;
+	z-index:1100;
+	padding:6px 23px 8px 7px;
+        text-decoration:none;
+	color:#04170a}
+*/
+
+/* JavaScript tab hover */
+/*
+.hasJS #nav li:hover a {
+	background:transparent}
+*/
+/*
+.hasJS #nav li a:hover {
+	padding:7px 24px 8px 8px;
+	border:0;
+	color:#000;
+        text-decoration:none;
+	background:transparent}
+*/
+
+/* menu ----------------------------------------------- */
+#nav .menu {
+	/* ie6.css */
+	visibility:hidden;
+	position:absolute;
+	z-index:1000;
+	left:5px;
+	width:916px;
+	-moz-box-shadow:0 3px 6px rgba(0,0,0,.2);
+	-webkit-box-shadow:0 3px 6px rgba(0,0,0,.2);
+	box-shadow:0 3px 6px rgba(0,0,0,.2);
+	background:#1e1e1e url(/static/images/global/pattern01.png) repeat 0 0;
+	color:#fff;
+	font-size:.9286em /* 13px */;
+	line-height:1.1538 /* 15px */}
+#nav .menu a {
+	color:#fff;
+        text-decoration:none;}
+
+/* hover */
+#nav li:hover .menu {
+	visibility:visible}
+
+/* with JS */
+.hasJS #nav .menu {
+	/* ie8.css */
+	visibility:visible;
+	display:none}
+
+/* ---- menu sections ---- */
+#nav .menu_sections {
+	float:left;
+	overflow:hidden;
+	padding:1em 13px;
+	width:644px;
+	min-height:206px; height:auto !important; height:206px;
+	background:#1e1e1e}
+#nav .menu_sections li {
+	margin:0 20px .25em 0;
+	width:141px}
+#nav .menu_sections li:nth-of-type(5) {
+	clear:both}
+
+#nav .menu_sections dt {
+	margin:0 0 .5em}
+#nav .menu_sections dd {
+	margin:0 0 .3em}
+
+/* ---- menu promo ---- */
+#nav .menu_promo {
+	float:right;
+	padding:1em 97px 0 0;
+	width:149px;
+	font-size:1.0769em; /* 14px */
+	line-height:1.357 /* 19px */}
+#nav .menu_promo a {
+	display:block;
+	position:relative;
+	left:12px;
+	float:left;
+	padding:5px}
+#nav .menu_promo img {
+	margin:0 0 1em}
+#nav .menu_promo p {
+	margin:0 0 .5em}
+
+/* ---- menu suggestion ---- */
+#nav .menu_suggestion {
+	float:left;
+	clear:both;
+	width:670px;
+	background:#1e1e1e}
+#nav .menu_suggestion .suggestion_title {
+	margin:0 7px .5em 0;
+	padding:.25em 13px;
+	background:#646463}
+#nav .menu_suggestion .suggestion_links {
+	padding:0 13px;
+	background:none}
+#nav .menu_suggestion .suggestion_links a {
+	font-weight:bold}
+
+
+  </style>
+

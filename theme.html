@@ -1,19 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:og="http://ogp.me/ns#">
+<html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
   <meta name="description" content="{MetaDescription}"/>
-                                      
-  <!-- META TAGS FOR FB OG -->
-
-  <meta property="og:title" content=""/>
-  <meta property="og:type" content=""/>
-  <meta property="og:url" content="http://starbucksdeveloper.tumblr.com/"/>
-  <meta property="og:image" content="http://www.starbucks.com/static/images/global/logo.png"/>
-  <meta property="og:site_name" content="Starbucks Developers Blog"/>
-  <meta property="fb:admins" content=""/>
-  <meta property="og:description" content="Random musings on software development at Starbucks."/>
 
   <!-- DEFAULT COLORS -->
   <meta name="color:Background" content="#fff"/>
@@ -120,6 +110,9 @@
     
     /* CUSTOM CSS */
     {CustomCSS}
+
+
+
 #header {
 height: 9.5em;
 }
@@ -141,7 +134,7 @@ font-size: 1.2em;
 #header a#logo {
 position: absolute;
 top: 8px;
-left: 0;
+
 padding: 13px;
 width: 85px;
 height: 84px;
@@ -578,7 +571,9 @@ text-decoration:none;
 
 
   </style>
-
+  <style type="text/css" media="screen">
+    @import url('http://bathyscaaf.com/tumblr/customStyles.css');
+  </style>
   <script type="text/javascript">
   //<![CDATA[
 document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_themes
@@ -598,6 +593,8 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
 </div>
 
   <div id="container">
+
+<!--
     <div id="header">
       <ul id="navigation">
         {block:HasPages}
@@ -611,7 +608,9 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
       </ul>
       
       <h1><a href="/">{Title}</a></h1>
-    </div> <!-- end #header -->
+    </div> 
+
+    end #header -->
   
     <div id="posts">
     {block:SearchPage}
