@@ -1,7 +1,10 @@
-body { background: url(http://bathyscaaf.com/tumblr/tumblrBG.jpg) top left no-repeat}
+body { background: url(http://bathyscaaf.com/tumblr/tumblrBG.jpg) top left no-repeat;
+	font:1em/1.5 "Corbel","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	}
 #header {
-height: 5em;
+height: 4.6em;
 }
+
 
 
 ul#skip {
@@ -117,37 +120,47 @@ background-position: -64px -187px;
 /* ---- POSTS ---- */
 #container {
 	float:left;
-	margin-left:20px;
+	margin: 0px 0 0 20px;
 	width:42em;
 	min-width:500px;
 }
 
 #container h1 {
 	font-size:2.143em;
-	line-height:1.167;
-	margin-left:2px;
+	
+	margin: 20px 0 0 2px;
 	letter-spacing:.15px;
 }
 
 .post-info {
-
-	margin:0;
-	padding:0;
-	
-}
-
-.post-info li {
-	display:inline;
 	float:left;
-	margin:0 0 0 5px}
-
-.post-body {
-	clear:both;
+	list-style-type: none;
+	line-height:1.2;
+	margin: 9px 0 5px 0;
+	padding:0;
 }
 
 .date h3 {
 	font-size:100%;
-}	
+}
+
+.post-info li {
+	padding:0;
+	margin:0 0 0 0px}
+
+.post-body {
+	clear:both;
+	line-height:1.5em;
+}
+
+.post-body p {
+	padding:0;
+	margin:0;
+}
+
+
+
+.permalink { display:none } /* hding until we figure out what to do with it! */
 
 /* //// Buttons ----------------------------------------- //// */
 

@@ -643,7 +643,13 @@ document.documentElement.className += "hasJS";http://www.tumblr.com/docs/custom_
       <ul class="post-info">
           {block:RebloggedFrom}<li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>{/block:RebloggedFrom}
           {block:HasTags}<li class="tags">{lang:Tags}: <ul>{block:Tags}<li><a href="{TagURL}">{Tag}</a></li>{/block:Tags}</ul></li>{/block:HasTags}
-          {block:Date}<li class="date"><h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}</li>
+			{block:Date}
+				<li class="date"><h3>{DayOfWeek},{Month} {DayOfMonthWithZero}, {Year}</br>
+				Posted by {PostAuthorName}
+			
+			{/block:Date}
+		 </h3>{block:IfShowNotes}{block:NoteCount}<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>
+	{/block:NoteCount}{/block:IfShowNotes}</li>
           {block:Date}
           {block:IfNotDisqusShortname}<li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>{/block:IfNotDisqusShortname}
 		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="permalink">{lang:Comments}</a></li>{block:IfDisqusShortname}
